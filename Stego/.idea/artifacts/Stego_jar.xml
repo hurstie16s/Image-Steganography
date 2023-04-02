@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Stego:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Stego_jar</output-path>
+    <root id="archive" name="Stego.jar">
+      <element id="module-output" name="Stego" />
+    </root>
+  </artifact>
+</component>
