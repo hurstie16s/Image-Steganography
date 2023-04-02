@@ -51,7 +51,7 @@ public class Stego {
                 try {
                     decode(args[1]);
                 } catch (ArrayIndexOutOfBoundsException e) {
-                    throw new ArrayIndexOutOfBoundsException("Too few arguments for command '"+args[0]+"'");
+                    throw new ArrayIndexOutOfBoundsException(e.getMessage());
                 }
             }
         }
@@ -153,7 +153,6 @@ public class Stego {
             // Set new colours
             pix1 = new Color(vals[0], vals[1], vals[2]);
             pix2 = new Color(vals[3], vals[4], vals[5]);
-            System.out.println(vals[6]);
             pix3 = new Color(vals[6], vals[7], vals[8]);
 
             image.setRGB(width, height, pix1.getRGB());
